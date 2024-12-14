@@ -111,7 +111,7 @@ let courses =[
 ];
 
 // Endpoints
-app.get('/courses', (req, res) => {
+app.post('/courses', (req, res) => {
     res.send(courses);
 });
 
