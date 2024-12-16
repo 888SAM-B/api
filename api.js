@@ -107,6 +107,12 @@ let courses =[
     "module": "Projects and Practice",
     "title": "Capstone Project: Build a REST API",
     "content": "Use Flask to create a RESTful API for managing tasks."
+  },
+    {
+    "id": 17,
+    "module": "Course Completed",
+    "title": "Course Completed",
+    "content": "Congradulation you have completed the course successfukky."
   }
 ];
 
