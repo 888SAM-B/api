@@ -216,10 +216,53 @@ let courses =[
   }
 ];
 
+let html=[
+  {
+    "id": 18,
+    "module": "Course Completed",
+    "title": "Course Completed",
+    "content": "Congradulation you have completed the course successfully."
+  }
+]
+let react=[
+  {
+    "id": 18,
+    "module": "react",
+    "title": "Course Completed",
+    "content": "Congradulation you have completed the course successfully."
+  }
+]
+let js=[
+  {
+    "id": 18,
+    "module": "js",
+    "title": "Course Completed",
+    "content": "Congradulation you have completed the course successfully."
+  }
+]
+let css=[
+  {
+    "id": 18,
+    "module": "CSS",
+    "title": "Course Completed",
+    "content": "Congradulation you have completed the course successfully."
+  }
+]
 // Endpoints
 app.get('/python', (req, res) => {
     res.send(courses);
 });
-
+app.get('/html', (req, res) => {
+  res.send(html);
+});
+app.get('/js', (req, res) => {
+  res.send(js);
+})
+app.get('/css', (req, res) => {
+  res.send(css);
+})
+app.get('/react', (req, res) => {
+  res.send(react);
+})
 // Start the server
 app.listen(3000, () => console.log('API running on http://localhost:3000'));
