@@ -216,53 +216,167 @@ let courses =[
   }
 ];
 
-let html=[
+let javaCourses = [
   {
-    "id": 18,
-    "module": "Course Completed",
-    "title": "Course Completed",
-    "content": "Congradulation you have completed the course successfully."
-  }
-]
-let react=[
+    "id": 1,
+    "module": "Introduction to Java",
+    "title": "What is Java?",
+    "content": `Java is a high-level, object-oriented programming language developed by Sun Microsystems in 1995. 
+    It is platform-independent, meaning "write once, run anywhere" (WORA).
+    Java's syntax is similar to C++ but simpler, making it easier to learn.
+    It is widely used in web, mobile, and enterprise application development.
+    Java programs run on the Java Virtual Machine (JVM), ensuring cross-platform compatibility.
+    Popular for its robustness, Java includes strong memory management features.
+    Java supports multithreading, allowing simultaneous execution of multiple tasks.
+    It is backed by a large community and extensive libraries.
+    Companies like Amazon, Google, and Netflix rely on Java for scalability.
+    Learning Java opens doors to diverse software development opportunities.`
+  },
   {
-    "id": 18,
-    "module": "react",
-    "title": "Course Completed",
-    "content": "Congradulation you have completed the course successfully."
-  }
-]
-let js=[
+    "id": 2,
+    "module": "Introduction to Java",
+    "title": "Installing Java",
+    "content": `To install Java, download the latest JDK (Java Development Kit) from Oracle's official website.
+    Follow the installation wizard for your OS and set up the JAVA_HOME environment variable.
+    Verify the installation by running "java -version" in your terminal.
+    An IDE like IntelliJ IDEA, Eclipse, or NetBeans can streamline Java development.
+    Ensure you also install the Java Runtime Environment (JRE) for running Java applications.
+    The JDK includes essential tools like javac (compiler) and java (runtime).
+    Platform-specific installation steps are well-documented in Java's official resources.
+    Keeping your Java version up-to-date ensures access to the latest features.
+    Learning the setup process is a foundational step in mastering Java.
+    Once installed, you are ready to create and execute your first Java program.`
+  },
   {
-    "id": 18,
-    "module": "js",
-    "title": "Course Completed",
-    "content": "Congradulation you have completed the course successfully."
-  }
-]
-let css=[
+    "id": 3,
+    "module": "Core Java Concepts",
+    "title": "Variables and Data Types",
+    "content": `Java variables store data and must be declared with a specific type.
+    Common data types include int, double, char, and boolean.
+    Strings are handled using the String class and are immutable.
+    Java supports type casting for converting between compatible data types.
+    Local, instance, and static variables are the main variable types in Java.
+    Constants are defined using the "final" keyword.
+    Arrays allow storing multiple values of the same type in a single variable.
+    Java follows strict type checking to ensure robust code execution.
+    Understanding data types is key to efficient Java programming.
+    Practice declaring and using variables in simple Java programs.`
+  },
   {
-    "id": 18,
-    "module": "CSS",
-    "title": "Course Completed",
-    "content": "Congradulation you have completed the course successfully."
+    "id": 4,
+    "module": "Core Java Concepts",
+    "title": "Control Flow",
+    "content": `Java uses control flow statements to direct program execution.
+    "if-else" statements evaluate conditions to execute specific code blocks.
+    "switch" statements handle multiple conditions more efficiently.
+    Loops like "for", "while", and "do-while" enable repetitive task execution.
+    The "break" and "continue" keywords control loop execution flow.
+    Java supports logical operators like &&, ||, and ! for complex conditions.
+    Nested loops and conditional statements add flexibility to code.
+    Control flow ensures logical sequencing and decision-making in programs.
+    Efficient use of control flow minimizes errors and improves program clarity.
+    Practice building programs that incorporate these control statements.`
+  },
+  {
+    "id": 5,
+    "module": "Core Java Concepts",
+    "title": "Object-Oriented Programming (OOP)",
+    "content": `Java is inherently object-oriented, focusing on classes and objects.
+    A class is a blueprint for creating objects, containing attributes and methods.
+    Objects are instances of classes, encapsulating state and behavior.
+    Key OOP principles in Java include inheritance, polymorphism, and encapsulation.
+    Abstraction allows hiding implementation details from the user.
+    Interfaces and abstract classes enable flexible designs.
+    Java promotes code reusability and modular development.
+    Mastering OOP concepts is essential for effective Java programming.
+    Real-world examples demonstrate how Java simplifies complex systems.
+    Building small OOP-based programs helps solidify these concepts.`
+  },
+  {
+    "id": 6,
+    "module": "Intermediate Java",
+    "title": "Exception Handling",
+    "content": `Java uses exceptions to handle runtime errors gracefully.
+    Use "try" and "catch" blocks to catch and handle exceptions.
+    The "finally" block ensures cleanup actions are executed.
+    Common exceptions include NullPointerException and ArithmeticException.
+    Use "throw" to explicitly raise an exception in your program.
+    Custom exceptions can be created by extending the Exception class.
+    The "throws" keyword declares exceptions a method might throw.
+    Proper exception handling improves program reliability.
+    Java’s robust error-handling features are essential for real-world applications.
+    Practice writing programs that handle various exception scenarios.`
+  },
+  {
+    "id": 7,
+    "module": "Intermediate Java",
+    "title": "Collections Framework",
+    "content": `Java's Collections Framework provides powerful data structures.
+    Common interfaces include List, Set, and Map.
+    ArrayList and LinkedList are dynamic alternatives to arrays.
+    HashSet and TreeSet store unique elements with different orderings.
+    HashMap and TreeMap manage key-value pairs efficiently.
+    Collections offer methods for searching, sorting, and filtering data.
+    Generics enhance type safety within collections.
+    Mastering collections is vital for managing data in Java applications.
+    Real-world projects rely heavily on Java’s robust collections.
+    Practice using collections to solve various data-handling problems.`
+  },
+  {
+    "id": 8,
+    "module": "Intermediate Java",
+    "title": "Threads and Multithreading",
+    "content": `Multithreading allows concurrent execution of code in Java.
+    Threads are created using the Thread class or Runnable interface.
+    The "synchronized" keyword prevents thread interference and data inconsistency.
+    Java provides the Executor framework for managing thread pools.
+    Use "wait" and "notify" methods for inter-thread communication.
+    Multithreading improves application performance and responsiveness.
+    Proper synchronization ensures thread safety in shared resources.
+    Debugging multithreaded programs requires careful analysis.
+    Real-time applications like games and servers use multithreading extensively.
+    Start with simple multithreading examples to grasp its concepts.`
+  },
+  {
+    "id": 9,
+    "module": "Advanced Java",
+    "title": "Working with Files",
+    "content": `File handling in Java uses classes from the java.io and java.nio packages.
+    Use FileReader and FileWriter for reading and writing text files.
+    BufferedReader and BufferedWriter enhance efficiency with larger files.
+    ObjectOutputStream and ObjectInputStream handle object serialization.
+    Java NIO offers advanced features like non-blocking I/O and file channels.
+    Exception handling is crucial to manage file operation errors.
+    Practice creating, reading, and writing files in different formats.
+    Real-world applications often involve processing file data.
+    Java’s extensive file handling APIs make it suitable for large-scale data management.
+    Understanding file I/O is essential for building robust applications.`
+  },
+  {
+    "id": 10,
+    "module": "Projects and Practice",
+    "title": "Mini Project: Student Management System",
+    "content": `Build a simple console-based student management system in Java.
+    Implement features like adding, updating, and deleting student records.
+    Use ArrayList or HashMap to store student data dynamically.
+    Practice reading and writing student data to a file for persistence.
+    Apply exception handling to manage invalid inputs gracefully.
+    Design the program using OOP principles for modularity.
+    Add a search feature to retrieve student information by ID or name.
+    Enhance the program with sorting options for better usability.
+    Testing and debugging ensure the program works flawlessly.
+    Completing this project boosts confidence in Java programming.`
   }
-]
+];
+
+
 // Endpoints
 app.get('/python', (req, res) => {
     res.send(courses);
 });
-app.get('/html', (req, res) => {
-  res.send(html);
-});
 app.get('/js', (req, res) => {
-  res.send(js);
-})
-app.get('/css', (req, res) => {
-  res.send(css);
-})
-app.get('/react', (req, res) => {
-  res.send(react);
-})
+  res.send(javaCourses);
+});
+
 // Start the server
 app.listen(3000, () => console.log('API running on http://localhost:3000'));
