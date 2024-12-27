@@ -374,7 +374,7 @@ let javaCourses = [
 app.get('/python', (req, res) => {
     res.send(courses);
 });
-app.get('/js', (req, res) => {
+app.get('/java', (req, res) => {
   res.send(javaCourses);
 });
 
