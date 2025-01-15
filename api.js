@@ -366,6 +366,12 @@ let javaCourses = [
     Enhance the program with sorting options for better usability.
     Testing and debugging ensure the program works flawlessly.
     Completing this project boosts confidence in Java programming.`
+  },
+  {
+    "id": 11,
+    "module": "Course Completed",
+    "title": "Congradulations ",
+    "content": `Congradulations You have completed the course`
   }
 ];
 
